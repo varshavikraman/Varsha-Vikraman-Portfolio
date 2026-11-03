@@ -40,7 +40,7 @@ export const skills = {
   Frontend: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'React Native', 'Tailwind CSS', 'HTML5 / CSS3'],
   Backend: ['Node.js', 'Express.js', 'NestJS', 'REST APIs', 'JWT & RBAC', 'MongoDB', 'SQLite'],
   Blockchain: ['Solidity', 'Ethereum', 'Hardhat', 'Web3.js', 'viem', 'Hyperledger Fabric'],
-  'AI / LLM': ['RAG', 'LangChain', 'Prompt Engineering', 'Hugging Face', 'vLLM', 'Groq API'],
+  'AI / LLM': ['RAG', 'LangChain', 'Prompt Engineering', 'Hugging Face', 'vLLM'],
   'DevOps & Tools': ['Docker', 'Kubernetes', 'GitHub', 'Postman', 'Figma', 'Python'],
 }
 

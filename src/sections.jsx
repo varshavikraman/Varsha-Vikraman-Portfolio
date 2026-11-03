@@ -47,7 +47,7 @@ export function Hero() {
   stack: ["MongoDB", "Express",
           "React", "Node.js"],
   web3: ["Solidity", "Hardhat", "viem"],
-  ai: ["RAG", "LangChain", "Groq"],
+  ai: ["RAG", "LangChain"],
   ops: ["Docker", "Kubernetes"],
   openToWork: true,
 };`}</code></pre>
@@ -63,9 +63,9 @@ export function About() {
     <>
       <Section id="about">
         <Reveal>
-          <Title id="about-h" kicker="About me">From circuits to full-stack and blockchain</Title>
+          <Title id="about-h" kicker="About me"></Title>
           <div className="grid md:grid-cols-2 gap-10">
-            <p className="text-muted leading-7">I started in Electronics and Communication Engineering at GEC Kozhikode, where I learned to think in systems. That became a career in full-stack development: shipping production MERN apps with JWT authentication and role-based access control, integrating LLMs and RAG pipelines, and running AI inference workloads on Kubernetes. A PG Diploma in Blockchain Technology adds smart contracts and decentralized architecture to the toolkit.</p>
+            <p className="text-muted leading-7">Full-stack developer with an Electronics and Communication Engineering background (GEC Kozhikode) and a PG Diploma in Blockchain Technology (Digital University Kerala). I build production MERN applications with JWT and RBAC, integrate LLMs and RAG pipelines, and deploy AI workloads on Kubernetes. I also write Solidity smart contracts for decentralized apps.</p>
             <ul className="flex flex-wrap gap-3 content-start">{traits.map((t) => <li key={t} className="px-4 py-2 rounded-full border border-line bg-card text-sm font-medium">{t}</li>)}</ul>
           </div>
         </Reveal>
@@ -127,7 +127,7 @@ export function Projects() {
       <motion.div layout className="grid md:grid-cols-2 gap-6">
         <AnimatePresence mode="popLayout">
           {shown.map((p) => (
-            <motion.article key={p.title} layout initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.96 }}
+            <motion.article key={p.title} layout initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.15 }} exit={{ opacity: 0, scale: 0.96 }}
               whileHover={{ y: -6 }} transition={{ duration: 0.25 }}
               className="rounded-2xl border border-line bg-card p-6 flex flex-col hover:border-accent hover:shadow-lg transition-colors">
               <div className="flex items-start justify-between gap-3">
